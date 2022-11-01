@@ -2,6 +2,8 @@ version: '2'
 services:
   postgres:
     image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
 
   redis:
     image: redis:alpine
